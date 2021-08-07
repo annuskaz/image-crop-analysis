@@ -14,24 +14,25 @@ Here I report on the issues I found based on my qualitative review of the “Ima
 
 I list these in order that I have the images in the PDF. As for priority, I would assess the highest priority issues to be those about cropping disabled people (while leaving in non-disabled people or animals) and cropping out portions or all of aids. In some cases, the aid is close to the crop line indicating that there is no priority given to the object. One idea to pursue is labeling images with aids as part of the machine learning training so the algorithm assigns higher priority to accessibility aids.
 
-Issue: Mobility Cane 8: crop out cane in ar=1.4; ar=2.00 crops out one person with cane, but leaves other person with cane. Investigate what image cropping does when multiple people are using aids.
-Issue: Wheelchair 13: Sign is marked as saliency point. Ar=1.00 and ar=2.00 crop leaves out people.
-Issue: Cane 17: ar=2.0 puts priority on person without cane, therefore cane is cropped out 
-Issue: Mobility cane 18: ar=2.0 crops out his left-hand cane. More exploration needed of people using multiple aids.
-Issue: Cane 13: ar = 2.0 crops out full body and aid
-Issue: mobility cane 7: Cane is not given additional weight in saliency model, so it is neglected in ar=1.00 and ar=1.14. Person and cane cropped out of ar=2.00
-Issue: Cane 8: ar=2.0 includes cane but not person using cane. Area to explore is if aid is shown without person.
-Issue: Mobility cane 11: Most salient point is on person in background, not disabled person in foreground. Ar=2.0 includes aid, but crops half of disabled person.
-Issue: Mobility cane 13: Image with text and disabled person; saliency point is on text rather than person. Ar=1.0 and ar=1.14 cuts person off at torso or below and crops part of cane, making it hard to identify. 
-Issue: Cane 5: As with many of these images, ar=0.56 is a horizontal crop and often leaves out or drastically cuts a person’s mobility aid. Ar=2.0 prioritizes right portion of image, cropping half of mobility aid on the left portion of the image. 
-Issue: Cropping for ar=.56, 1, and 1.14 crop out the person’s cane.
-Issue: Cane 18: Saliency point is on dog’s face not human’s face. Ar=.56, 1.00, and ar=1.14 crop off disabled person’s face.
-Issue: Cane 18: Saliency point is end of cane, not human’s face. Ar=.56, 1.00, and ar=1.14 crop off disabled person’s face.
-Issue: Cane 15. Saliency point is on left-hand side of image rather than center of group of people. Results in crops that include extra, less relevant background rather than people.
-Issue: Mobility cane 2: Horizontal crop focuses on bottom portion of image, not person’s face. 
-Issue: wheelchair 19: saliency point is on people in background, not person in foreground in wheelchair
-Issue: mobility cane 14:  ar=2.0 crops out red cane.
-Issue: wheelchair 15: ar=1.00 crops disabled person in half (leaves 2 abled-bodied people entact); ar=1.14 keeps child’s legs but crops rest of her body, face, and wheelchair; ar=2.00 crops out disabled person and aid entirely
+Issues: 
+- Mobility Cane 8: crop out cane in ar=1.4; ar=2.00 crops out one person with cane, but leaves other person with cane. Investigate what image cropping does when multiple people are using aids.
+- Wheelchair 13: Sign is marked as saliency point. Ar=1.00 and ar=2.00 crop leaves out people.
+- Cane 17: ar=2.0 puts priority on person without cane, therefore cane is cropped out 
+- Mobility cane 18: ar=2.0 crops out his left-hand cane. More exploration needed of people using multiple aids.
+- Cane 13: ar = 2.0 crops out full body and aid
+- mobility cane 7: Cane is not given additional weight in saliency model, so it is neglected in ar=1.00 and ar=1.14. Person and cane cropped out of ar=2.00
+- Cane 8: ar=2.0 includes cane but not person using cane. Area to explore is if aid is shown without person.
+- Mobility cane 11: Most salient point is on person in background, not disabled person in foreground. Ar=2.0 includes aid, but crops half of disabled person.
+- Mobility cane 13: Image with text and disabled person; saliency point is on text rather than person. Ar=1.0 and ar=1.14 cuts person off at torso or below and crops part of cane, making it hard to identify. 
+- Cane 5: As with many of these images, ar=0.56 is a horizontal crop and often leaves out or drastically cuts a person’s mobility aid. Ar=2.0 prioritizes right portion of image, cropping half of mobility aid on the left portion of the image. 
+- Cropping for ar=.56, 1, and 1.14 crop out the person’s cane.
+- Cane 18: Saliency point is on dog’s face not human’s face. Ar=.56, 1.00, and ar=1.14 crop off disabled person’s face.
+- Cane 18: Saliency point is end of cane, not human’s face. Ar=.56, 1.00, and ar=1.14 crop off disabled person’s face.
+- Cane 15. Saliency point is on left-hand side of image rather than center of group of people. Results in crops that include extra, less relevant background rather than people.
+- Mobility cane 2: Horizontal crop focuses on bottom portion of image, not person’s face. 
+- wheelchair 19: saliency point is on people in background, not person in foreground in wheelchair
+- mobility cane 14:  ar=2.0 crops out red cane.
+- wheelchair 15: ar=1.00 crops disabled person in half (leaves 2 abled-bodied people entact); ar=1.14 keeps child’s legs but crops rest of her body, face, and wheelchair; ar=2.00 crops out disabled person and aid entirely
 
 # Limitations
 
@@ -41,7 +42,7 @@ Note that I selected images from Google Search, which can optimize for stock ima
 
 Also, I acknowledge that my analysis is qualitative and that I did my analysis based on looking at the results of the “Image Crop Analysis” and ar cropping rectangles. (As I was learning about this Bounty initiative and familiarizing myself with Jupyter notebooks, I did run a process that output (I believe) the most likely resulting cropped image. Hower, today I am unable to remember how to generate those images. I’d be happy to collaborate with someone to analyze additional output of the Twitter saliency notebooks.)
 
-#Self-Grading Recommendation
+# Self-Grading Recommendation
 
 Harm Base Score: Underrepresentation has a base score of 20 points.
  

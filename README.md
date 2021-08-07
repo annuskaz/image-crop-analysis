@@ -6,7 +6,7 @@ I performed an analysis of a small sample: 20 images of people in wheelchairs; 2
 
 To summarize my analysis, the majority of images DO include at least some portion of the accessibility aid, which is very promising. However, I found instances in which the saliency model DOES crop out cane or wheelchairs, resulting in an image that erases a crucial component of disability identity. Due to the importance of understanding this issue more in-depth, I strongly encourage further investigation of a quantitative and qualitative nature, described here and in my LIMITATIONS section.  To determine a more reliable impact, a larger sample of images would need to be analyzed. Those images should account for intersectionality since disabled people are of different races, genders, and other identities. I found some instances in which the intersection of identities (female-presenting & disabled) resulted in an image crop that focused on the torso of the individual, thus introducing harm on multiple dimensions. I detail the specifics of these instances in the RESULTS section below. 
 
-To gauge the potential impact of this harm, I start with the demographic provided by the World Health Organization (2020):  worldwide, there are over one billion people with a disability, according to the World Health Organization.There are approximately xx people with mobility impairments who may use canes.  As of 2011, 75 million people need a wheelchair on a daily basis. Note that this represents 1% of the world’s population (World Health Organization, 2011). ” Regarding blindness, there are approximately 88.4 million blind people worldwide (World Health Organization, 2021). 
+To gauge the potential impact of this harm, I start with the demographic provided by the World Health Organization (2020):  worldwide, there are over one billion people with a disability, according to the World Health Organization.There are approximately xx people with mobility impairments who may use canes.  As of 2011, 75 million people need a wheelchair on a daily basis. Note that this represents 1% of the world’s population (World Health Organization, 2011). Regarding blindness, there are approximately 88.4 million blind people worldwide (World Health Organization, 2021). 
 
 # Findings
 
@@ -37,6 +37,8 @@ Issue: wheelchair 15: ar=1.00 crops disabled person in half (leaves 2 abled-bodi
 
 People have different connections and relationships with their assistive aids. For example, the role of assistive aids in people’s identities varies. Some people may not consider their aid as an integral aspect of their identity, and thus, may not have a strong negative reaction to their accessibility aid cropped from an image. Some wheelchair users will have different opinions and associations related to their wheelchairs depending on how long they have been using a wheelchair and other factors (Carrington et al., 2014). Further research is needed to determine disabled people’s attitudes toward image cropping of mobility aids and other visual aspects of disability, such as prosthetics. 
 
+Note that I selected images from Google Search, which can optimize for stock images rather than real-life, persona images posted on Twitter. I suggest further analysis using a more diverse data set to reflect Twitter images.
+
 Also, I acknowledge that my analysis is qualitative and that I did my analysis based on looking at the results of the “Image Crop Analysis” and ar cropping rectangles. (As I was learning about this Bounty initiative and familiarizing myself with Jupyter notebooks, I did run a process that output (I believe) the most likely resulting cropped image. Hower, today I am unable to remember how to generate those images. I’d be happy to collaborate with someone to analyze additional output of the Twitter saliency notebooks.)
 
 #Self-Grading Recommendation
@@ -54,7 +56,7 @@ Clarity: The submission included detailed instructions and notebooks that allowe
 Creativity: This submission exercised industry standard methods for assessing ableist harms so did not qualify for additional creativity / wild card multipliers.
  
 The overall score of my Accessibility Aids bias assessment is:
-20 base points x MF(1.2 + 1.2 + 1.1 + 1.0 + 1.25) which is (20 x 5.75) for a total score of 115. (Please check my calculation because I see in the example that the example total was 60.84 and my factor values are very similar.) 
+20 base points x MF(1.2 + 1.2 + 1.1 + 1.0 + 1.25) which is (20 x 5.75) for a total score of 115. (Please check my calculation because I see in the example that the example total was 60.84. So my overall score should be more along those lines since my factor values are very similar to the example.) 
 
 # References
 

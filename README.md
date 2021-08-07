@@ -1,6 +1,4 @@
-# Image Crop Analysis
-
-# Unintentional Harms of Cropping Accessibility Mobility Aids
+# Image Crop Analysis: Unintentional Harms of Cropping Accessibility Mobility Aids
 
 I am submitting my inquiry into how the Twitter saliency model crops images of disabled people who use accessibility mobility aids, such as wheelchairs and canes. Mobility aids are a critical mechanism for physical mobility and empowerment (Ladner, 2015). Disabled people who use mobility aids have described their aids as being an integral component of their identity. Some disabled people customize and decorate their aids as a source of pride and as a way to resist socio-cultural stigma of disability (Profita, 2016). Therefore, my submission is based on the premise that an image of a person with their accessibility aid should include their aid in the cropped image to embrace their full identity. An algorithm that crops out a person’s aid is creating unintentional harm.
 

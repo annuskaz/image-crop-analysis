@@ -6,7 +6,7 @@ I performed an analysis of a small sample: 20 images of people in wheelchairs; 2
 
 To summarize my analysis, the majority of images DO include at least some portion of the accessibility aid, which is very promising. However, I found instances in which the saliency model DOES crop out cane or wheelchairs, resulting in an image that erases a crucial component of disability identity. Due to the importance of understanding this issue more in-depth, I strongly encourage further investigation of a quantitative and qualitative nature, described here and in my LIMITATIONS section.  To determine a more reliable impact, a larger sample of images would need to be analyzed. Those images should account for intersectionality since disabled people are of different races, genders, and other identities. I found some instances in which the intersection of identities (female-presenting & disabled) resulted in an image crop that focused on the torso of the individual, thus introducing harm on multiple dimensions. I detail the specifics of these instances in the RESULTS section below. 
 
-To gauge the potential impact of this harm, I start with the demographic provided by the World Health Organization (2020):  worldwide, there are over one billion people with a disability, according to the World Health Organization.There are approximately xx people with mobility impairments who may use canes.  As of 2011, 75 million people need a wheelchair on a daily basis. Note that this represents 1% of the world’s population (World Health Organization, 2011). Regarding blindness, there are approximately 88.4 million blind people worldwide (World Health Organization, 2021). 
+To gauge the potential impact of this harm, I start with the demographic provided by the World Health Organization (2020):  worldwide, there are over one billion people with a disability, according to the World Health Organization. In the U.S., 18.6% of adults have difficulty walking or climbing stairs (CDC, 2021). As of 2011, 75 million people need a wheelchair on a daily basis. Note that this represents 1% of the world’s population (World Health Organization, 2011). Regarding blindness, there are approximately 88.4 million blind people worldwide (World Health Organization, 2021). 
 
 # Findings
 
@@ -61,6 +61,8 @@ The overall score of my Accessibility Aids bias assessment is:
 # References
 
 Carrington, Patrick, Amy Hurst, and Shaun K. Kane. “Wearables and Chairables: Inclusive Design of Mobile Input and Output Techniques for Power Wheelchair Users,” 3103–12. ACM Press, 2014. https://doi.org/10.1145/2556288.2557237.
+
+Center for Disease Control. Disability and Functioning Fast Stats. 2021. Retrieved August 6, 2021 from https://www.cdc.gov/nchs/fastats/disability.htm. 
 
 Ladner, Richard E. “Design for User Empowerment.” Interactions 22, no. 2 (2015): 24–29.
 
